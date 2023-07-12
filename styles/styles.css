@@ -844,18 +844,18 @@ form input[type='text']:not(:first-of-type) {
 
 /* ========== */
 
-/* === AUTOPARK === */
+/* === instrument === */
 
-.autopark {
+.instrument {
   margin-top: 160px;
 }
-.autopark-grid {
+.instrument-grid {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 16px 20px;
 }
-.autopark-item {
+.instrument-category {
   position: relative;
   padding: 20px 15px;
   display: flex;
@@ -865,10 +865,20 @@ form input[type='text']:not(:first-of-type) {
   overflow: hidden;
   transition: 0.4s ease;
 }
-.autopark-item:hover {
+.instrument-item {
+  position: relative;
+  padding: 5px 5px;
+  display: flex;
+  align-items: flex-end;
+  background-color: #f5f5f5;
+  min-height: 230px;
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+.instrument-category:hover {
   background-color: var(--accent-text);
 }
-.autopark-item img {
+.instrument-category img {
   position: absolute;
   top: -5px;
   left: -30px;
@@ -878,124 +888,143 @@ form input[type='text']:not(:first-of-type) {
   object-fit: contain;
   transition: 2s ease-in-out;
 }
-/* .autopark-item:nth-of-type(1) img {
-  left: -45px;
+.instrument-item img {
+  position: absolute;
+  top: -5px;
+  left: -30px;
+  width: 120%;
+  height: 180px;
+  display: block;
+  object-fit: contain;
+  transition: 2s ease-in-out;
 }
-.autopark-item:nth-of-type(2) img {
+.instrument-item:nth-of-type(1) img {
+  left: -15px;
+}
+.instrument-item:nth-of-type(2) img {
   left: -40px;
 }
-.autopark-item:nth-of-type(3) img {
+.instrument-item:nth-of-type(3) img {
   left: -40px;
 }
-.autopark-item:nth-of-type(4) img {
+.instrument-item:nth-of-type(4) img {
   top: -50px;
   width: 140%;
   height: 250px;
   left: -65px;
 }
-.autopark-item:nth-of-type(5) img {
+.instrument-item:nth-of-type(5) img {
   top: -30px;
   width: 120%;
   height: 220px;
   left: -45px;
 }
-.autopark-item:nth-of-type(6) img {
+.instrument-item:nth-of-type(6) img {
   top: -30px;
   width: 120%;
   height: 220px;
   left: -50px;
 }
-.autopark-item:nth-of-type(9) img {
+.instrument-item:nth-of-type(9) img {
   top: -30px;
   width: 120%;
   height: 220px;
   left: -50px;
 }
-.autopark-item:nth-of-type(10) img {
+.instrument-item:nth-of-type(10) img {
   top: -30px;
   width: 120%;
   height: 220px;
   left: -50px;
 }
-.autopark-item:nth-of-type(11) img {
+.instrument-item:nth-of-type(11) img {
   top: -30px;
   width: 120%;
   height: 220px;
   left: -50px;
 }
-.autopark-item:nth-of-type(12) img {
+.instrument-item:nth-of-type(12) img {
   top: -30px;
   width: 120%;
   height: 220px;
   left: -40px;
 }
-.autopark-item:hover img {
+.instrument-item:hover img {
   transform: scale(1.05);
 }
-.autopark-item-title {
+.instrument-item-title {
   font-family: 'Russo One';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: var(--dark-color);
+}
+.instrument-category-title {
+  font-family: 'Russo One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 130%;
   text-transform: uppercase;
   color: var(--dark-color);
 }
 @media (max-width: 576px) {
-  .autopark {
+  .instrument {
     margin-top: 100px;
   }
-  .autopark-item-title {
+  .instrument-item-title {
     font-size: 13px;
   }
-  .autopark-grid {
+  .instrument-grid {
     margin-top: 30px;
     grid-template-columns: repeat(2, 1fr);
   }
-  .autopark-item {
+  .instrument-item {
     min-height: 186px;
   }
-  .autopark-item img {
+  .instrument-item img {
     position: absolute;
     top: -5px;
     left: -30px;
     width: 120%;
     height: 150px;
   }
-  .autopark-item:nth-of-type(4) img {
+  .instrument-item:nth-of-type(4) img {
     top: -50px;
     width: 140%;
     height: 200px;
     left: -65px;
   }
-  .autopark-item:nth-of-type(5) img {
+  .instrument-item:nth-of-type(5) img {
     top: -40px;
     height: 200px;
   }
-  .autopark-item:nth-of-type(6) img {
+  .instrument-item:nth-of-type(6) img {
     top: -40px;
     height: 200px;
   }
-  .autopark-item:nth-of-type(7) img,
-  .autopark-item:nth-of-type(8) img {
+  .instrument-item:nth-of-type(7) img,
+  .instrument-item:nth-of-type(8) img {
     top: -30px;
     height: 180px;
   }
-  .autopark-item:nth-of-type(10) img {
+  .instrument-item:nth-of-type(10) img {
     top: -35px;
     width: 115%;
     height: 215px;
     left: -40px;
   }
-  .autopark-item:nth-of-type(11) img {
+  .instrument-item:nth-of-type(11) img {
     height: 200px;
   }
-  .autopark-item:nth-of-type(12) img {
+  .instrument-item:nth-of-type(12) img {
     top: -30px;
     width: 125%;
     height: 205px;
     left: -40px;
-  } */
+  } 
 }
 /* ========== */
 
